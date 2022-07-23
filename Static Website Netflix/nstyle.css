@@ -1,0 +1,317 @@
+:root{
+    --primary-color: red;
+    --dark-color:black;
+    --light-color:white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: #9999;
+}
+ul{
+    list-style: none;
+}
+h1{
+    
+    color: white;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+    font-weight: lighter;
+}
+h4{
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/*p{
+    
+    font-weight: bold;
+    color: white;
+}*/
+/*img{
+    width: 100%;
+    height: 370px;
+}*/
+.showcase{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(netflixbg.jpg)/* no-repeat center/cover*/;   
+}
+.showcase::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0 , 0.4);
+    box-shadow: 120px 100px 250px black,inset -120px --100px 250px;
+}
+.showcase-top{
+    position: relative;
+    z-index: 2 ;
+    height: 90px;
+}
+.showcase-top img{
+    width: 140px;
+    height: 67px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40%,-50%);
+}
+.showcase-top a{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-60%,-50%);
+}
+.showcase-select{
+margin-left: 1028px;
+margin-top: 27px;
+width: 72px;
+height: 36px;
+border-radius: 2px;
+background: transparent;
+color: rgb(116, 114, 114);
+border-color: white;
+}
+.showcase-content{
+    position: relative;
+    margin: 0 26%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 9rem;
+}
+.showcase-content h1{
+    font-weight:700 ;
+    font-size: 53px;
+    margin: 0 30px;
+    max-width: 800px;
+    line-height: 74px;
+}
+.showcase-content h3{
+    color: white;
+    font-size: 25px;
+    margin: 16px 0;
+}
+.showcase-content p{
+    font-size: 19px;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+.showcase-content input{
+    position: absolute;
+    left: 0;
+    bottom: -8vh;
+    width: 359px;
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+.btn{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 5px 3px rgba(0, 0, 0 , 0.4);
+}
+.btn-rounded{
+    border-radius: 5px;
+}
+.showcase-content .btn-lg{
+    position: absolute;
+    right: 0;
+    bottom: -8vh;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    height: 32px;
+    width: 14rem;
+}
+.card0
+.card1
+.card3{
+    border-top: 8px rgb(69, 69, 69);
+    padding: 50px;
+}
+.card0{
+    
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 25px 45px;
+}
+.des0{
+    padding-left: 100px;
+}
+.dowld{
+    margin-bottom: 12px;
+    font-size: 3.125rem;
+}
+.dowld1{
+    font-size: 1.525rem;
+}
+.card1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 25px 45px 50px;
+   border-top-color:gray ;
+}
+.des1{
+    padding-left: 80px;
+}
+.enjoy{
+    margin-bottom: 12px;
+    font-size: 3.15rem;
+}
+.enjoy1{
+    font-size: 1.525rem;
+}
+.card3{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.des3{
+    padding-left: 80px;
+    padding-right: 100px;
+}
+.watch{
+    margin-bottom: 12px;
+    font-size: 2.667rem;
+}
+.watch1{
+    font-size: 1.35rem;
+}
+.stylecards h1{
+    font-size: 3rem;
+    padding: 1rem;
+}
+.faq{
+    text-align: center;
+}
+.faq h1{
+    padding-bottom: 40px;
+    font-size: 3rem;
+}
+
+.question{
+
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    align-items: center;
+}
+.question li{
+    padding: 20px 30px;
+    margin: 5px;
+    font-size: 1.6rem;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    text-align: left;
+    width: 50%;
+
+}
+.faq p{
+    padding-top: 60px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.input{
+    display: inline-flex;
+    align-items: center;
+}
+.input input{
+    width: 550px;
+    height: 3.5rem;
+}
+.input button{
+    height: 3.5rem;
+    width: 200px;
+    left: 20px;
+    text-align: center;
+    background-color: red;
+    font-size: 1.5rem;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 2px ;
+    color: white;
+}
+.footer{
+    max-width: 70%;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem auto;
+    color: #737373;
+    margin-top: 77px;
+    
+    
+}
+.footer
+.footer a{
+    color: #9999;
+    font-size: 0.9rem;
+}
+footer p{
+    margin-bottom: 1.5rem;
+}
+
+.footer-cols{
+    display: flex;
+    height: 145px;
+    width: 800px;
+    margin-top: -4px;   
+    margin-left: -9px;
+    
+}
+.footer-cols1{
+    margin-left: 10px;
+    width: 227px;
+    
+    
+}
+.footer-cols2{
+    margin-left: 10px;
+    width: 227px;   
+}
+.footer-cols3{
+    margin-left: 10px;
+    width: 227px;   
+}
+
+
+
